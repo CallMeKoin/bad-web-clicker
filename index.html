@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clicker">
+        <input type="text" id="cdisplay" value="0" disabled>
+        <h3>clicks</h3>
+        <input type="text" id="cdisp" value="0" disabled>
+        <h3>golden points</h3>
+        <input type="text" id="cps" value="0" disabled>
+        <h3>golds per second</h3>
+        <div class="buttons">
+            <button onclick="Clicked()">Click!</button>
+        </div>
+    </div>
+    <div class="steroidshop">
+        <input type="text" id="sdisplay" value="0" disabled>
+        <h3>amnt</h3>
+        <input type="text" id="sdisplay2" value="10" disabled>
+        <div class = "shopbutton">
+            <button onclick="buysteroids()"><h1>BUY UPGRADE</h1></button>
+        </div>
+    </div>
+    <div class="rebirths">
+        <input type="text" id="ascend" value="0" disabled>
+        <h3>amnt</h3>
+        <input type="text" id="ascendcost" value="15000" disabled>
+        <div class="ascendbuttn">
+            <button onclick="ascend()"><h2>ASCEND</h2></button>
+        </div>
+    </div>
+    <div class="machine">
+        <input type="text" id="mdisplay" value="0" disabled>
+        <h3>amnt</h3>
+        <input type="text" id="mdisplay2" value="100" disabled>
+        <h3>cost in gold</h3>
+        <div class = "mbutton">
+            <button onclick="buymachine()"><h1>BUILD MACHINE</h1></button>
+        </div>
+    </div>
+    <div class="multipliers">
+        <input type="text" id="multi" value="1" disabled>
+        <div class="multibuttions">
+            <button onclick="mlti(1)"><h2>x1</h2></button>
+            <button onclick="mlti(10)"><h2>x10</h2></button>
+            <button onclick="mlti(100)"><h2>x100</h2></button>
+        </div>
+    </div>
+
+    <button onclick="ResetData()"><h2>Hard Reset</h2></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
